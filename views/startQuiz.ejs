@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Profile EJS Page
+    <br>
+    <br>
+    Welcome <%=name%><br>
+    Attempts <%=attempts%><br>
+    HighScore <%=highScore%><br>
+
+
+
+
+    <br>
+    <br>
+    
+
+    <form action="/users/startQuiz/nextQuestion" method="post">
+        Question : <%=question%><br>
+        Option1 : <%=option1%><input type="radio" name="option" value="0"><br>
+        Option2 : <%=option2%><input type="radio" name="option" value="1"><br>
+        Option3 : <%=option3%><input type="radio" name="option" value="2"><br>
+        Option4 : <%=option4%><input type="radio" name="option"value="3"><br>
+        <input type="submit">
+    </form>
+
+
+
+
+    
+    <br>
+    <br>
+
+    <a href="/users/logout">Logout</a>
+</body>
+</html>
