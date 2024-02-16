@@ -1,0 +1,33 @@
+Quiz Application
+Mongodb Atlas -- Username RollnoName
+
+Questions - 20 Questions
+Users
+Attempts
+
+----------------------------------------
+
+1. User Site - Content Home Page
+
+2. Login/Signup -- Name, RollNo , Age , Gender
+	RollNo Duplicate , Javascript script
+
+3. Attempts , Quiz , DataTime , Score , CorrectAns(Optional)
+
+4. Quiz Start	(5) Random
+	1. Questions 
+	Radio(4 options)
+		Submit, Next 
+
+Javascript(DOM)
+
+Result - Marks 
+Attempts - Date And Time , No. of Attempts
+
+Node.js
+/login
+/signup
+/QuizStart
+/question
+/addattempts
+/attempts
