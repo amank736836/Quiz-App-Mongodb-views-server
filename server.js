@@ -118,14 +118,12 @@ app.post('/login',(req,res)=>{
                 req.session.currScore = response[0].currScore;
                 req.session.index = 0;
                 req.session.correctAnswer = "null";
-                
                 res.redirect('/users/dashboard')
             }
         })
 })
 
 app.post('/signup',(req,res)=>{
-    
     let obj= {'password':req.body.password,'name':req.body.name,'rollno':req.body.rollno,'age':req.body.age,'gender':req.body.gender, 'attempts': 0 , 'highScore' : 0,'currScore' : 0};
 
     dbinstance.collection('users').find({'rollno':req.body.rollno}).toArray()
