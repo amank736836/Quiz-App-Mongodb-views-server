@@ -12,6 +12,9 @@ client.connect('mongodb+srv://2111981299aman:chitkara@quiz.9jehy4j.mongodb.net/?
         console.log('DataBase connected')
         dbinstance =  data.db('Login')
     })
+    .catch((err)=>{
+        console.log(err)
+    })
 
 
 
