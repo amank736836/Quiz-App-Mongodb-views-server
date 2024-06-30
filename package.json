@@ -11,5 +11,12 @@
     "mongodb": "^6.3.0",
     "mongoose": "^8.1.1",
     "nodemon": "^3.0.3"
-  }
+  },
+  "name": "quiz-app---mongodb---views",
+  "version": "1.0.0",
+  "description": "Quiz-App-Mongodb-views-server<br>\r Author - Aman Kumar <br>",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
