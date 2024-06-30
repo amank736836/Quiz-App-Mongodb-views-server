@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express');
 const app = express();
 
@@ -6,8 +8,9 @@ const session = require('express-session')
 
 
 const client = require('mongodb').MongoClient;
+console.log(process.env.MONGODB_USERNAME);
 
-client.connect('mongodb+srv://2111981299aman:chitkara@quiz.9jehy4j.mongodb.net/?retryWrites=true&w=majority')
+client.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_HOST}/`)
     .then((data)=>{
         console.log('DataBase connected')
         dbinstance =  data.db('Login')
@@ -144,5 +147,5 @@ app.post('/signup',(req,res)=>{
 })
 
 app.listen(4000,(err)=>{
-    console.log('Server Started...');
+    console.log('Server Started at http://localhost:4000/');
 })
