@@ -146,6 +146,8 @@ app.post('/signup',(req,res)=>{
         })
 })
 
-app.listen(4000,(err)=>{
-    console.log('Server Started at http://localhost:4000/');
+const port = process.env.PORT || 4000;
+
+app.listen(port,(err)=>{
+    console.log(`Server started at port ${port}`)
 })
